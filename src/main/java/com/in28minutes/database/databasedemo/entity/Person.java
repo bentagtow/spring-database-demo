@@ -9,6 +9,7 @@ public class Person {
     private Date birthDate;
 
     public Person(int id, String name, String location, Date birthDate) {
+        super();
         this.id = id;
         this.name = name;
         this.location = location;
