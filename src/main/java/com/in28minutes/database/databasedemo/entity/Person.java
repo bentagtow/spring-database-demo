@@ -8,6 +8,10 @@ public class Person {
     private String location;
     private Date birthDate;
 
+    public Person() {
+        //no argument constructor
+    }
+
     public Person(int id, String name, String location, Date birthDate) {
         super();
         this.id = id;
@@ -46,5 +50,15 @@ public class Person {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    @Override
+    public String toString() {
+        return "\nPerson{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
     }
 }
