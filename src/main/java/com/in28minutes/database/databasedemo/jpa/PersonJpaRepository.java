@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 
 @Repository
 @Transactional
-public class PersonJPARepository {
+public class PersonJpaRepository {
 
     //connect to the database!
     @PersistenceContext
