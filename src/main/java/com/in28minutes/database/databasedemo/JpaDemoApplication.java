@@ -8,8 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan("com.in28minutes.database.databasedemo.jpa")
+
 public class JpaDemoApplication implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
@@ -23,7 +26,7 @@ public class JpaDemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-//		logger.info("User id 10011 -> {}", repository.findById(10011));
+		logger.info("User id 10011 -> {}", repository.findById(10011));
 
 //		logger.info("All users -> {}", repository.findAll());
 //		logger.info("Deleting 10012 -> Number of Rows Deleted - {}", repository.deleteById(10012));
