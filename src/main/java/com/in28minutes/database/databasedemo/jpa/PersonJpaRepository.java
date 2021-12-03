@@ -20,10 +20,14 @@ public class  PersonJpaRepository {
         return entityManager.find(Person.class, id);
     }
 
-//    public Person update(Person person){
-//        //merge method knows whetehr the ID is set in the person or if not, it inserts an id
-//        return entityManager.merge(person);
-//    }
+    public Person update(Person person){
+        //merge method knows whetehr the ID is set in the person or if not, it inserts an id
+        return entityManager.merge(person);
+    }
+    public Person insert(Person person){
+        //merge method knows whetehr the ID is set in the person or if not, it inserts an id
+        return entityManager.merge(person);
+    }
 
 
 

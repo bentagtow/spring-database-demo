@@ -10,6 +10,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.util.Date;
+
 @SpringBootApplication
 @ComponentScan("com.in28minutes.database.databasedemo.jpa")
 
@@ -30,8 +32,8 @@ public class JpaDemoApplication implements CommandLineRunner {
 
 //		logger.info("All users -> {}", repository.findAll());
 //		logger.info("Deleting 10012 -> Number of Rows Deleted - {}", repository.deleteById(10012));
-//		logger.info("Inserting 10014 -> {}", repository.insert(new Person(10014, "Benji", "Berlin", new Date())));
-//		logger.info("Update 10013 -> {}",
-//				repository.update(new Person(10013, "Ben", "Ten", new Date())));
+		logger.info("Inserting 10014 -> {}", repository.insert(new Person( "Benji", "Berlin", new Date())));
+		logger.info("Update 10013 -> {}",
+				repository.update(new Person(10013, "Ben", "Ten", new Date())));
 	}
 }
